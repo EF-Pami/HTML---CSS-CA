@@ -28,3 +28,13 @@ nav ul{
     border: 1px solid gray;
     float: right;
 }
+
+.floated{
+    margin-top: 10px;
+    float: right;
+}
+
+textarea{
+    cols="10";
+    rows="30"
+}
