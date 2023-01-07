@@ -1,7 +1,12 @@
+/* General backgrounds for all pages
+---------------------------------------*/
+
 body{
     background-color: tan;
 }
 
+/* Nav styling
+------------------*/
 nav li{
     display:inline-block;
     margin-right: 20px;
@@ -14,10 +19,19 @@ nav ul{
     justify-content:flex-end;
 }
 
-.movies{
-    margin-inline: 20px;
+/* Home page stlying
+--------------------------*/
+.header image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
- 
+.header img{
+    flex: 0 1;
+    width: 100%;
+}
+    
+    
 
 
 .checkout{
@@ -34,7 +48,3 @@ nav ul{
     float: right;
 }
 
-textarea{
-    cols="10";
-    rows="30"
-}
