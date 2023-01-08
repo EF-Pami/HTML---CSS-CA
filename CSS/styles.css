@@ -42,6 +42,10 @@ nav ul{
     gap: 40px;
     justify-content: space-evenly;
 }
+#captxt{
+    text-align: left;
+    text-indent: 10px;
+}
 
 
 /* Movies page styling
