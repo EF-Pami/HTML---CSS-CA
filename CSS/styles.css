@@ -31,8 +31,11 @@ nav{
     display: flex;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 .banner-img{
+    border: 1px;
+    display: block;
     flex: 0 1;
     width: 100%;
 }
