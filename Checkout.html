@@ -13,14 +13,14 @@
         <img src="images/SquareEyes_Logo.png" alt="logo of SQUARE EYES" width="500" height="285">
         
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Movies.html">Movies</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contacts.html">Contacts</a></li>
-                <li><a href="Signup.html"><i class='fa-solid fa-user-large'></i></a></li>
-                <li><a href="Checkout.html"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a></li>
-            </ul>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="Movies.html">Movies</a>
+                <a href="About.html">About</a>
+                <a href="Contacts.html">Contacts</a>
+                <a href="Signup.html"><i class='fa fa-user' style='font-size:30px'></i></a>
+                <a href="Checkout.html"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a>
+            </div>
         
         </nav>
         
@@ -29,12 +29,12 @@
         
         <div class="checkout floated">
             <form>
-                <label for="name">Name:</label><br>
+                <label for="name">Name*</label><br>
                 <input type="text" id="name" placeholder="enter name" name="name"><br>
-                <label for="email">Email Address:</label><br>
-                <input type="text" id="email" placeholder="enter email" name="email"><br>
-                <label for="pword">Password:</label><br>
-                <input type="text" id="pword" placeholder="enter your password" name="pword"><br>
+                <label for="email">Email Address*</label><br>
+                <input type="text" id="email" placeholder="enter email" name="email" required><br>
+                <label for="pword">Password*</label><br>
+                <input type="password" id="pword" placeholder="enter your password" name="pword" required><br>
                 <p>Payment method</p>
                 <input type="radio" id="card" name="payment method" value="Credit card/Debit card">
                 <label for="card">Credit card/Debit card</label>

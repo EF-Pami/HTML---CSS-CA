@@ -7,28 +7,32 @@ body{
 
 /* Nav styling
 ------------------*/
-nav li{
-    display:inline-block;
-    margin-right: 20px;
-    margin-top: 0px;
+nav{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+    display: inline-block;
     justify-content: flex-end;
-    
+
 }
 
-nav ul{
+.nav-bar{
     display:flex;
     justify-content:flex-end;
+    margin-right: 20px;
+    margin-top: 0px;
     
 }
 
 /* Home page styling
 --------------------------*/
-.header image{
+.banner{
     display: flex;
     width: 100%;
     object-fit: cover;
 }
-.header img{
+.banner-img{
     flex: 0 1;
     width: 100%;
 }
@@ -95,5 +99,12 @@ textarea {
     width: auto;
     padding: 10px 10px;
     margin: 6px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=password]{
+    width: auto;
+    padding: 10px 10px;
+    margin: 6px 0px;
     box-sizing: border-box;
   }
