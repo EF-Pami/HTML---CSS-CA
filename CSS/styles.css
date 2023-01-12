@@ -7,7 +7,7 @@ body{
 
 /* Nav styling
 ------------------*/
-nav{
+nav a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -17,7 +17,8 @@ nav{
 
 }
 
-.nav-bar{
+.nav-bar a{
+    text-decoration: none;
     display:flex;
     justify-content:flex-end;
     margin-right: 20px;
@@ -32,12 +33,14 @@ nav{
     width: 100%;
     object-fit: cover;
     overflow: hidden;
+    justify-content: center;
 }
 .banner-img{
     border: 1px;
     display: block;
     flex: 0 1;
-    width: 100%;
+    width: 1920px;
+    height: 500;
 }
 
 .hmimg{
