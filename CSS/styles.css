@@ -5,9 +5,9 @@ body{
     background-color: tan;
 }
 
-#logo {
-    width: 400;
-    height: 250;
+#logo img{
+    width: 350px;
+    height: 250px;
 }
 
 /* Nav styling
@@ -40,15 +40,14 @@ nav a{
     display: flex;
     width: 100%;
     object-fit: cover;
-    overflow: hidden;
-    justify-content: center;
+    
 }
+    
+
 .banner-img{
-    border: 1px;
-    display: block;
-    flex: 0 1;
-    width: 1920px;
-    height: 500;
+    flex: 1 1;
+    width: 100%;
+    
 }
 
 .hmimg{
