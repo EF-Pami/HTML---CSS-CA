@@ -83,6 +83,52 @@ nav a{
 }
 
 
+/*Checkout page
+-------------------*/
+
+.buy button{
+    background-color: darkorange;
+    font-size: 15px;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+
+.buy button:hover{
+    background-color: rgb(96, 234, 96);
+}
+
+.success button{
+    background-color: darkorange;
+    font-size: 15px;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+
+.success button:hover{
+    background-color: rgb(96, 234, 96);
+}
+
+/*Signup page styling
+------------------------*/
+
+.Register form{
+    justify-content: center;
+}
+
+/*view pages
+---------------*/
+.product button{
+    background-color: darkorange;
+    font-size: 15px;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+
+.product button:hover{
+    background-color: rgb(96, 234, 96);
+}
+
+
     
     
 
@@ -120,6 +166,13 @@ textarea {
     padding: 10px 10px;
     margin: 6px 0px;
     box-sizing: border-box;
+  }
+
+  input[type=submit]{
+    background-color: darkorange;
+    font-size: 15px;
+    padding: 12px 12px;
+    border-radius: 10px;
   }
 
 
