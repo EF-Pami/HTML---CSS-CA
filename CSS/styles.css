@@ -16,6 +16,7 @@ body{
 nav li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+    font-weight: bold;
     display: inline-block;
     margin-right: 20px;
 
@@ -30,6 +31,9 @@ nav{
 nav a{
     color:black;
     text-decoration: none;
+}
+nav a:hover{
+    color: red;
 }
 
 
@@ -50,6 +54,20 @@ nav a{
     
 }
 
+.watch button{
+    border: none;
+    background-color: darkorange;
+    font-size: 15px;
+    padding: 12px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.watch button:hover{
+    background-color: rgb(96, 234, 96);
+    cursor: pointer;
+}
+
 .hmimg{
     display: flex;
     flex-direction: column;
@@ -58,7 +76,7 @@ nav a{
 .inline{
     display: flex;
     flex-flow: row wrap;
-    gap: 40px;
+    gap: 20px;
     justify-content: space-evenly;
 }
 #captxt{
@@ -87,25 +105,31 @@ nav a{
 -------------------*/
 
 .buy button{
+    border: none;
     background-color: darkorange;
     font-size: 15px;
-    padding: 12px 12px;
-    border-radius: 10px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 20px;
 }
 
 .buy button:hover{
     background-color: rgb(96, 234, 96);
+    cursor: pointer;
 }
 
 .success button{
+    border: none;
     background-color: darkorange;
     font-size: 15px;
-    padding: 12px 12px;
-    border-radius: 10px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 20px;
 }
 
 .success button:hover{
     background-color: rgb(96, 234, 96);
+    cursor: pointer;
 }
 
 /*Signup page styling
@@ -118,14 +142,17 @@ nav a{
 /*view pages
 ---------------*/
 .product button{
+    border: none;
     background-color: darkorange;
     font-size: 15px;
-    padding: 12px 12px;
-    border-radius: 10px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 20px;
 }
 
 .product button:hover{
     background-color: rgb(96, 234, 96);
+    cursor: pointer;
 }
 
 
@@ -138,7 +165,7 @@ nav a{
 .floated{
     margin-top: 10px;
     float: right;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 textarea {
@@ -169,10 +196,12 @@ textarea {
   }
 
   input[type=submit]{
+    border: none;
     background-color: darkorange;
     font-size: 15px;
-    padding: 12px 12px;
-    border-radius: 10px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 20px;
   }
 
 
