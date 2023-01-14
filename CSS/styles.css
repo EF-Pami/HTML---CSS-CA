@@ -61,11 +61,20 @@ nav a:hover{
     padding: 12px 15px;
     border-radius: 30px;
     font-weight: bold;
+    position: relative;
 }
 
 .watch button:hover{
     background-color: rgb(96, 234, 96);
     cursor: pointer;
+}
+
+#captxt{
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-line;
+    justify-content: left;
+    font-size: 20px;
 }
 
 .hmimg{
