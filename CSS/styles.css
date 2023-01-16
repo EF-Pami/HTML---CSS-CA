@@ -132,7 +132,7 @@ nav a:hover{
 /*CTA-button 
 ---------------*/
 
-.CTA-button{
+.CTA button{
     border: none;
     background-color: darkorange;
     font-size: 15px;
@@ -141,7 +141,7 @@ nav a:hover{
     border-radius: 20px;
 }
 
-.CTA-button:hover{
+.CTA button:hover{
     background-color: rgb(96, 234, 96);
     cursor: pointer;
 }
