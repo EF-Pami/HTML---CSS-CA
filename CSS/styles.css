@@ -54,20 +54,7 @@ nav a:hover{
     
 }
 
-.watch button{
-    border: none;
-    background-color: darkorange;
-    font-size: 15px;
-    padding: 12px 15px;
-    border-radius: 30px;
-    font-weight: bold;
-    position: relative;
-}
 
-.watch button:hover{
-    background-color: rgb(96, 234, 96);
-    cursor: pointer;
-}
 
 #captxt{
     word-break: break-all;
@@ -113,33 +100,9 @@ nav a:hover{
 /*Checkout page
 -------------------*/
 
-.buy button{
-    border: none;
-    background-color: darkorange;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 12px 15px;
-    border-radius: 20px;
-}
 
-.buy button:hover{
-    background-color: rgb(96, 234, 96);
-    cursor: pointer;
-}
 
-.success button{
-    border: none;
-    background-color: darkorange;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 12px 15px;
-    border-radius: 20px;
-}
 
-.success button:hover{
-    background-color: rgb(96, 234, 96);
-    cursor: pointer;
-}
 
 /*Signup page styling
 ------------------------*/
@@ -150,19 +113,7 @@ nav a:hover{
 
 /*view pages
 ---------------*/
-.product button{
-    border: none;
-    background-color: darkorange;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 12px 15px;
-    border-radius: 20px;
-}
 
-.product button:hover{
-    background-color: rgb(96, 234, 96);
-    cursor: pointer;
-}
 
 /*Contact page
 -----------------*/
@@ -177,6 +128,23 @@ nav a:hover{
     
 
 
+
+/*CTA-button 
+---------------*/
+
+.CTA-button{
+    border: none;
+    background-color: darkorange;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 20px;
+}
+
+.CTA-button:hover{
+    background-color: rgb(96, 234, 96);
+    cursor: pointer;
+}
 
 
 .floated{
