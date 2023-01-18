@@ -303,3 +303,10 @@ textarea {
     }
 }
 
+@media screen and (max-width:768px) {
+    .movies img{
+        width: 150px;
+        height: 300px;
+    }
+}
+
