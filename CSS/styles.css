@@ -46,7 +46,7 @@ nav a:hover{
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    background: black;
+    background: white;
     z-index: -1;
 }
 
