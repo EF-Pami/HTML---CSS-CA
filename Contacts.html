@@ -5,43 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="CSS/styles.css" rel="stylesheet">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-        <title>SQUARE EYES</title>
+        <title>SQUARE EYES: Contact page</title>
     </head>
     <body>
         <header>
             <div id="logo">
-                <img src="images/SquareEyes_Logo.png" alt="logo of SQUARE EYES"> 
+                <img src="images/SquareEyes_Logo.png" class="logo" alt="SQUARE EYES logo"> 
             </div>
-            <nav id="main-nav">
-                <ul class="nav-bar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Movies.html">Movies</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Contacts.html">Contacts</a></li>
-                        <li><a href="Signup.html"><i class='fa fa-user' style='font-size:30px'></i></a></li>
-                        <li><a href="Checkout.html"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a></li>
-                    </ul>
+            <nav id="sidebar-menu">
+                <label id="hamburger-menu" for="hamburger-input">
+                    <i class='fa fa-bars'></i>
+                </label>
+                <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Movies.html">Movies</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contacts.html">Contacts</a></li>
+                    <li><a href="Signup.html"><i class='fa fa-user' style='font-size:30px'></i></a></li>
+                    <li><a href="Checkout.html"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a></li>   
                 </ul>
             </nav>
 
-            <input type="checkbox" id="hamburger-input" class="burger-shower"/>
-            <label id="hamburger-menu" for="hamburger-input">
-                <nav id="sidebar-menu">
-                    <h3>Menu</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Movies.html">Movies</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Contacts.html">Contacts</a></li>
-                        <li><a href="Signup.html">Signup</a></li>
-                        <li><a href="Checkout.html">Checkout</a></li>
-                    </ul>
-                </nav>
-            </label>
-
-            <div class="overlay"></div>
-        
         </header>
         <main>
             <div class="contact form floated"> 
@@ -72,11 +57,14 @@
         
         </main>
         <footer>
-            <a href="https://www.instagram.com/"><i class='fa fa-instagram'></i></a>
-            <a href="https://www.facebook.com/"><i class='fa fa-facebook'></i></a>
-            <a href="https://twitter.com/?lang=nb>"><i class='fa fa-twitter'></i></a>
-            <a href="https://www.youtube.com/"><i class='fa fa-youtube-play'></i></a>
-            <p>Copyright &copy; 2022 SquareEyes</p>
+            <nav>
+                <a href="https://www.instagram.com/"><i class='fa fa-instagram'></i></a>
+                <a href="https://www.facebook.com/"><i class='fa fa-facebook'></i></a>
+                <a href="https://twitter.com/?lang=nb>"><i class='fa fa-twitter'></i></a>
+                <a href="https://www.youtube.com/"><i class='fa fa-youtube-play'></i></a>
+                <p>Copyright &copy; 2022 SquareEyes</p> 
+            </nav>
+            
         </footer>
     </body>
 </html>

@@ -1,31 +1,66 @@
 /* General backgrounds for all pages
 ---------------------------------------*/
 
-body{
-    background-color: tan;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#logo img{
-    width: 350px;
-    height: 250px;
+html, body {
+    width: 100%;
+}
+
+.logo{
+    width: 190px;
+    height: 140px;
+}
+
+#logo{
+    width: 40%;
+}
+
+header{
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+main{
+    padding: 240px 10px 10px 10px;
+}
+
+
+
+body{
+    background-color: tan;
 }
 
 /* Nav styling
 ------------------*/
 
+#sidebar-menu {
+    position: absolute;
+    top: 180px;
+}
+
+.main-nav, #hamburger-input {
+    display: none;
+}
+
+#hamburger-input:checked + .main-nav {
+    display: block;
+}
+
+.main-nav {
+    background-color: #3D0E61;
+    padding: 10px;
+}
+
 nav li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    display: inline-block;
-    margin-right: 20px;
-
-}
-
-nav{
-    display:flex;
-    justify-content:flex-end;
-    
 }
 
 nav a{
@@ -35,87 +70,6 @@ nav a{
 nav a:hover{
     color: red;
 }
-
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-    background: white;
-    z-index: -1;
-}
-
-#hamburger-input{
-    display: none;
-}
-
-#hamburger-menu{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    display: none;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(
-        to bottom,
-        #3D0E61, #3D0E61 20%,
-        white 20%, white 40%,
-        #3D0E61 40%, #3D0E61 60%,
-        white 60%, white 80%,
-        #3D0E61 80%, #3D0E61 100%
-    );
-}
-
-#hamburger-menu #sidebar-menu{
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: 100px;
-    background-color: #3D0E61;
-    transition: 0.3s;
-    padding: 0px 10px;
-    box-sizing: border-box;
-}
-
-#hamburger-menu h3{
-    color: #B9FAF8;
-    font-size: 40px;
-}
-
-#hamburger-menu ul{
-    padding-left: 0px;
-}
-
-#hamburger-menu li{
-    list-style-type: none;
-    line-height: 3rem;
-}
-
-#hamburger-menu a:hover{
-    text-decoration: underline;
-}
-
-#hamburger-input:checked + #hamburger-menu #sidebar-menu{
-    visibility: visible;
-    left: 0;
-}
-
-#hamburger-input:checked ~ .overlay{
-    visibility: visible;
-    opacity: 0.4;
-}
-
 
 
 /* Home page styling
@@ -148,11 +102,12 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 .inline{
     display: flex;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: space-evenly;
 }
 #captxt{
@@ -168,12 +123,18 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;   
 }
 .moviesinline{
     display: flex;
     flex-flow: row wrap;
     gap: 40px;
     justify-content: space-evenly;
+}
+
+.movies img{
+    width: 150px;
+    height: 300px;
 }
 
 
@@ -187,12 +148,17 @@ nav a:hover{
 /*Signup page styling
 ------------------------*/
 
-.Register{
-    justify-content: center;
-}
 
 /*view pages
 ---------------*/
+.pro{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.pro img{
+    width: 350px;
+    height: 400px;
+}
 
 
 /*Contact page
@@ -281,10 +247,9 @@ textarea {
 --------------------*/
 
   footer{
-    text-align: center;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .fa{
@@ -293,21 +258,48 @@ textarea {
     padding: 5px 10px;
 }
 
+@media(min-width:900px) {
+    .logo{
+        width:397px;
+        height: 198px;
+    }
 
-@media screen and (max-width: 768px) {
-    #main-nav {
+    header{
+        display: flex;
+    }
+
+    #logo{
+        width: 20%;
+    }
+
+    #sidebar-menu{
+        position: relative;
+        width: 80%;
+        top: 0;
+    }
+
+    ul li{
+        width: 100px;
+    }
+
+    .main-nav{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: transparent;
+        list-style: none;
+    }
+
+    #hamburger-menu{
         display: none;
     }
-    #hamburger-menu{
-        display: inline;
+
+    .movies img{
+        width: 250px;
+        height: 450px;
     }
 }
 
-@media screen and (max-width:768px) {
-    .movies img{
-        width: 150px;
-        height: 300px;
-    }
-   
-}
 

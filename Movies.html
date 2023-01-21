@@ -5,52 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="CSS/styles.css" rel="stylesheet">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-        <title>SQUARE EYES</title>
+        <title>SQUARE EYES: Movie page</title>
     </head>
     <body>
         <header>
             <div id="logo">
-                <img src="images/SquareEyes_Logo.png" alt="logo of SQUARE EYES"> 
+                <img src="images/SquareEyes_Logo.png" class="logo" alt="SQUARE EYES logo"> 
             </div>
-            <nav id="main-nav">
-                <ul class="nav-bar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Movies.html">Movies</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Contacts.html">Contacts</a></li>
-                        <li><a href="Signup.html"><i class='fa fa-user' style='font-size:30px'></i></a></li>
-                        <li><a href="Checkout.html"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a></li>
-                    </ul>
+            <nav id="sidebar-menu">
+                <label id="hamburger-menu" for="hamburger-input">
+                    <i class='fa fa-bars'></i>
+                </label>
+                <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Movies.html">Movies</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contacts.html">Contacts</a></li>
+                    <li><a href="Signup.html"><i class='fa fa-user' style='font-size:30px'></i></a></li>
+                    <li><a href="Checkout.html"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a></li>   
                 </ul>
             </nav>
 
-            <input type="checkbox" id="hamburger-input" class="burger-shower"/>
-            <label id="hamburger-menu" for="hamburger-input">
-                <nav id="sidebar-menu">
-                    <h3>Menu</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Movies.html">Movies</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Contacts.html">Contacts</a></li>
-                        <li><a href="Signup.html">Signup</a></li>
-                        <li><a href="Checkout.html">Checkout</a></li>
-                    </ul>
-                </nav>
-            </label>
-
-            <div class="overlay"></div>
-        
         </header>
         <main>
             <h1>Recently Added</h1>
             <main class="movies">
                 <section class ="moviesinline">
-                    <a href="view2.html"><img src="images/black-adam_caah1vzu-min.jpg" alt="image of black-adam_vxxrtbew movie" width="250" height="450"></a>
-                    <a href="view.html"><img src="images/black-panther-wakanda-forever_kyevcckm.jpg" alt="image of black-panther-wakanda-forever_bbma1guv movie" width="250" height="450"></a>
-                    <a href="view3.html"><img src="images/black-widow_l5kis4pv-min.jpg" alt="image of black-widow_ugeuprwz movie" width="250" height="450"></a>
-                    <a href="view4.html"><img src="images/top-gun-maverick_fyu0udso-min.jpg" alt="image of top-gun-maverick_eercqwcm movie" width="250" height="450"></a>
+                    <a href="view2.html"><img src="images/black-adam_caah1vzu-min.jpg" alt=" black-adam_vxxrtbew movie" width="250" height="450"></a>
+                    <a href="view.html"><img src="images/black-panther-wakanda-forever_kyevcckm.jpg" alt="black-panther-wakanda-forever_bbma1guv movie" width="250" height="450"></a>
+                    <a href="view3.html"><img src="images/black-widow_l5kis4pv-min.jpg" alt=" black-widow_ugeuprwz movie" width="250" height="450"></a>
+                    <a href="view4.html"><img src="images/top-gun-maverick_fyu0udso-min.jpg" alt="top-gun-maverick_eercqwcm movie" width="250" height="450"></a>
                 </section>
             </main>
                 
@@ -58,10 +43,10 @@
             <h2>Newly Released</h2>
             <main class="movies">
                 <section class ="moviesinline">
-                    <img src="images/elvis_ml4veolj-min.jpg" alt="image of elvis_pfzye87s movie" width="250" height="450">
-                    <img src="images/after-we-collided_yedtaqcj-min.jpg" alt="image of after-we-collided_rf5u4oet movie" width="250" height="450">
-                    <img src="images/avengers-endgame_bezoqps7.jpg" alt="image of avengers-endgame_ldgjdhmc movie" width="250" height="450">
-                    <img src="images/no-time-to-die_hekuryum-min.jpg" alt="image of no-time-to-die_ujnukkj0 movie" width="250" height="450">
+                    <img src="images/elvis_ml4veolj-min.jpg" alt="elvis_pfzye87s movie" width="250" height="450">
+                    <img src="images/after-we-collided_yedtaqcj-min.jpg" alt="after-we-collided_rf5u4oet movie" width="250" height="450">
+                    <img src="images/avengers-endgame_bezoqps7.jpg" alt="avengers-endgame_ldgjdhmc movie" width="250" height="450">
+                    <img src="images/no-time-to-die_hekuryum-min.jpg" alt="no-time-to-die_ujnukkj0 movie" width="250" height="450">
                 </section>
             </main>
                 
@@ -69,21 +54,24 @@
             <h3>Continue Watching</h3>
             <main class="movies">
                 <section class ="moviesinline">
-                    <img src="images/the-call-of-the-wild_7u79jgv4-min.jpg" alt="image of the-call-of-the-wild_awszgyps movie" width="250" height="450">
-                    <img src="images/jumanji-the-next-level_ewinqelz.jpg" alt="image of jumanji-the-next-level_trrqne0h movie" width="250" height="450">
-                    <img src="images/the-lion-king_falz6pg5-min.jpg" width="250" alt="image of the-lion-king_j0nvibhw movie" height="450">
-                    <img src="images/john-wick-chapter-3-parabellum_wtas0d60-min.jpg" alt="image of john-wick-chapter-3-parabellum_pjjibmsh movie" width="250" height="450">
+                    <img src="images/the-call-of-the-wild_7u79jgv4-min.jpg" alt="the-call-of-the-wild_awszgyps movie" width="250" height="450">
+                    <img src="images/jumanji-the-next-level_ewinqelz.jpg" alt="jumanji-the-next-level_trrqne0h movie" width="250" height="450">
+                    <img src="images/the-lion-king_falz6pg5-min.jpg" width="250" alt="the-lion-king_j0nvibhw movie" height="450">
+                    <img src="images/john-wick-chapter-3-parabellum_wtas0d60-min.jpg" alt="john-wick-chapter-3-parabellum_pjjibmsh movie" width="250" height="450">
                 </section>
             </main>
                 
         
         </main>
         <footer>
-            <a href="https://www.instagram.com/"><i class='fa fa-instagram'></i></a>
-            <a href="https://www.facebook.com/"><i class='fa fa-facebook'></i></a>
-            <a href="https://twitter.com/?lang=nb>"><i class='fa fa-twitter'></i></a>
-            <a href="https://www.youtube.com/"><i class='fa fa-youtube-play'></i></a>
-            <p>Copyright &copy; 2022 SquareEyes</p>
+            <nav>
+                <a href="https://www.instagram.com/"><i class='fa fa-instagram'></i></a>
+                <a href="https://www.facebook.com/"><i class='fa fa-facebook'></i></a>
+                <a href="https://twitter.com/?lang=nb>"><i class='fa fa-twitter'></i></a>
+                <a href="https://www.youtube.com/"><i class='fa fa-youtube-play'></i></a>
+                <p>Copyright &copy; 2022 SquareEyes</p> 
+            </nav>
+            
         </footer>
     </body>
 </html>
