@@ -34,6 +34,30 @@ main{
 
 body{
     background-color: tan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold; 
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /* Nav styling
@@ -128,7 +152,7 @@ nav a:hover{
 .moviesinline{
     display: flex;
     flex-flow: row wrap;
-    gap: 40px;
+    gap: 20px;
     justify-content: space-evenly;
 }
 
@@ -140,7 +164,18 @@ nav a:hover{
 
 /*Checkout page
 -------------------*/
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container p{
+    font-size: 15px;
+    font-weight: bold;
+}
 
+.buy-form{
+    margin-top: 15px;
+}
 
 
 
@@ -153,11 +188,13 @@ nav a:hover{
 ---------------*/
 .pro{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 .pro img{
-    width: 350px;
+    width: 320px;
     height: 400px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 
@@ -169,6 +206,12 @@ nav a:hover{
     word-wrap: break-word;
     white-space: pre-line;
     justify-content: left;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.contact-form{
+    margin-top: 20px;
 }
     
     
@@ -204,7 +247,7 @@ nav a:hover{
 -------------------*/
 
 textarea {
-    width: 100%;
+    width: 250px;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -217,7 +260,7 @@ textarea {
   }
 
   input[type=text] {
-    width: 310px;
+    width: 250px;
     padding: 10px 10px;
     margin: 6px 0;
     border-radius: 10px;
@@ -226,7 +269,7 @@ textarea {
   }
 
   input[type=password]{
-    width: 310px;
+    width: 250px;
     padding: 10px 10px;
     border-radius: 10px;
     border: 2px solid #ccc;
@@ -296,9 +339,35 @@ textarea {
         display: none;
     }
 
+    
+
     .movies img{
         width: 250px;
         height: 450px;
+    }
+
+    .product{
+        flex-direction: row;
+    }
+    
+    .pro{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    
+
+    
+    
+    .buy-form{
+        float: right;
+        width: 30%;
+    }
+    .buy{
+        float: right;
+        width: 30%;
+        margin-bottom: 30px;
     }
 }
 
