@@ -213,6 +213,13 @@ nav a:hover{
 .contact-form{
     margin-top: 20px;
 }
+
+/*About page styling
+-----------------------*/
+.About-container img{
+    width: 212px;
+    height: 188px;
+}
     
     
 
@@ -362,6 +369,10 @@ textarea {
         grid-template-columns: auto auto;
     }
 
+    .About-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
     
 
     
