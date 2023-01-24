@@ -35,29 +35,37 @@
                 <p>Black Panther: Wakanda Forever</p>
             <img src="images/black-panther-wakanda-forever_kyevcckm.jpg" alt="black panther" width="300" height="500">
                 <form class="buy-form">
-                    <label for="name">Name*</label><br>
-                    <input type="text" id="name" placeholder="enter name" name="name"><br>
-                    <label for="email">Email Address*</label><br>
-                    <input type="text" id="email" placeholder="enter email" name="email" required><br>
-                    <label for="pword">Password*</label><br>
-                    <input type="password" id="pword" placeholder="enter your password" name="pword" required><br>
+                    <div class="input">
+                        <label for="name">Name*</label>
+                    <input type="text" id="name" placeholder="enter name" name="name">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email Address*</label>
+                    <input type="text" id="email" placeholder="enter email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="pword">Password*</label>
+                    <input type="password" id="pword" placeholder="enter your password" name="pword" required>
+                    </div>
+                    
                     <p>Payment method</p>
                     <input type="radio" id="card" name="payment method" value="Credit card/Debit card">
                     <label for="card">Credit card/Debit card</label>
-                    <i class="fa fa-credit-card"></i><br>
+                    <i class="fa fa-credit-card"></i>
                     <i class='fa fa-cc-visa' style='color: blue'></i>
                     <i class='fa fa-cc-mastercard' style='color: red'></i>
                     <i class='fa fa-cc-amex' style='color: blue'></i>
                     <i class='fa fa-apple'></i>
-                    <i class='fa fa-amazon'></i><br>
+                    <i class='fa fa-amazon'></i>
                     <input type="radio" id="pal" name="payment method" value="Paypal">
-                    <label for="pal">Paypal</label><br>
+                    <label for="pal">Paypal</label>
                     <i class='fa fa-cc-paypal' style='color: blue'></i>
+                    <div class="CTA button">
+                        <a href="Checkout sucess.html" class="buy"><button type="submit">Buy Now</button></a>
+                    </div> 
                 </form>
             </div>
-            <div class="CTA button">
-                <a href="Checkout sucess.html" class="buy"><button type="submit">Buy Now</button></a>
-            </div> 
+            
 
             
             
