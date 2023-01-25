@@ -380,14 +380,12 @@ textarea {
         height: 450px;
     }
 
-    .product{
-        flex-direction: row;
-    }
     
-    .pro{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+    
+    .product{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 
     .container{
