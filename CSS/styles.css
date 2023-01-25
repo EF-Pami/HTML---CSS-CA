@@ -30,6 +30,14 @@ main{
     padding: 240px 10px 10px 10px;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
 
 
 body{
