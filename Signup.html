@@ -28,19 +28,30 @@
             </nav>
 
         </header>
-        <main class="Register">
+        <main class="Register-container">
             <div>
-                <form>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" placeholder="John Smith" name="name"><br>
-                    <label for="address">Address:</label><br>
-                    <input type="text" id="address" placeholder="Strandvegen 9" name="address"><br>
-                    <label for="pcode">Postal code:</label><br>
-                    <input type="text" id="pcode" placeholder="9008" name="pcode"><br>
-                    <label for="email">Email Address:</label><br>
-                    <input type="text" id="email" placeholder="Johnsmith@gmail.com" name="email"><br>
-                    <label for="pword">Password</label><br>
-                    <input type="password" id="pword" placeholder="enter your password" name="pword"><br>
+                <form class="signup-form">
+                    <div class="input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Smith" name="name">
+                    </div>
+                    <div class="input">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Strandvegen 9" name="address">
+                    </div>
+                    <div class="input">
+                        <label for="pcode">Postal code</label>
+                        <input type="text" id="pcode" placeholder="9008" name="pcode">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" placeholder="Johnsmith@gmail.com" name="email">
+                    </div>
+                    <div class="input">
+                        <label for="pword">Password</label>
+                        <input type="password" id="pword" placeholder="enter your password" name="pword">
+                    </div>
+                    
             
                 </form>
                 <p>I will like to recieve offers and informations by e-mail.</p>
@@ -49,8 +60,10 @@
                     <input type="radio" id="yes" name="answer" value="Yes Please">
                     <label for="yes">Yes Please</label>
                     <input type="radio" id="no" name="answer" value="No Thanks">
-                    <label for="no">No Thanks</label><br>
-                    <input type="submit" value="Sign Up">
+                    <label for="no">No Thanks</label>
+                    <div>
+                        <input type="submit" value="Sign Up"> 
+                    </div>    
                 </form>
             </div>
         </main>
