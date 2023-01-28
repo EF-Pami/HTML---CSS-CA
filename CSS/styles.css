@@ -333,6 +333,7 @@ textarea {
 
     header{
         display: flex;
+        background-color: #c5bbcd;
     }
 
     #logo{
