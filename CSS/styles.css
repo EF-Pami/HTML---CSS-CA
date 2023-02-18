@@ -1,3 +1,18 @@
+/*Variable declarations
+----------------------------*/
+:root{
+    --green: rgb(96, 234, 96);
+    --tan: rgb(210, 180, 140);
+    --red: rgb(255, 0, 0);
+    --black: rgb(0,0,0);
+    --purple: #c5bbcd;
+    --arch: #ccc;
+    --darkorange: rgb(255, 140, 0);
+    --grey: #f8f8f8;
+}
+
+
+
 /* General backgrounds for all pages
 ---------------------------------------*/
 
@@ -24,7 +39,7 @@ header{
     padding: 10px;
     position: fixed;
     width: 100%;
-    background-color: #c5bbcd;
+    background-color: var(--purple);
 }
 
 main{
@@ -42,7 +57,7 @@ footer{
 
 
 body{
-    background-color: tan;
+    background-color: var(--tan);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -86,7 +101,7 @@ h4{
 }
 
 .main-nav {
-    background-color: #c5bbcd;
+    background-color: var(--purple);
     padding: 10px;
 }
 
@@ -97,11 +112,11 @@ nav li {
 }
 
 nav a{
-    color:black;
+    color: var(--black);
     text-decoration: none;
 }
 nav a:hover{
-    color: red;
+    color: var(--red);
 }
 
 
@@ -247,7 +262,7 @@ nav a:hover{
 
 .CTA button{
     border: none;
-    background-color: darkorange;
+    background-color: var(--darkorange);
     font-size: 15px;
     font-weight: bold;
     padding: 12px 15px;
@@ -255,7 +270,7 @@ nav a:hover{
 }
 
 .CTA button:hover{
-    background-color: rgb(96, 234, 96);
+    background-color: var(--green);
     cursor: pointer;
 }
 
@@ -267,9 +282,9 @@ textarea {
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 2px solid var(--arch);
     border-radius: 10px;
-    background-color: #f8f8f8;
+    background-color: var(--grey);
     font-size: 16px;
     resize: none;
     
@@ -280,7 +295,7 @@ textarea {
     padding: 10px 10px;
     margin: 6px 0;
     border-radius: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid var(--arch);
     box-sizing: border-box;
   }
 
@@ -289,7 +304,7 @@ textarea {
     padding: 10px 10px;
     margin: 6px 0;
     border-radius: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid var(--arch);
     box-sizing: border-box;
   }
 
@@ -297,14 +312,14 @@ textarea {
     width: 250px;
     padding: 10px 10px;
     border-radius: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid var(--arch);
     margin: 6px 0px;
     box-sizing: border-box;
   }
 
   input[type=submit]{
     border: none;
-    background-color: darkorange;
+    background-color: var(--darkorange);
     font-size: 15px;
     font-weight: bold;
     padding: 12px 15px;
@@ -322,7 +337,7 @@ textarea {
 
   .fa{
     font-size: 30px;
-    color:black;
+    color: var(--black);
     padding: 5px 10px;
 }
 
@@ -334,7 +349,7 @@ textarea {
 
     header{
         display: flex;
-        background-color: #c5bbcd;
+        background-color: var(--purple);
     }
 
     #logo{
