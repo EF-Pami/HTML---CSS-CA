@@ -260,16 +260,19 @@ nav a:hover{
 /*CTA-button 
 ---------------*/
 
-.CTA button{
-    border: none;
+.button{
+    color: var(--black);
     background-color: var(--darkorange);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
+    
+    text-decoration: none;
     padding: 12px 15px;
     border-radius: 20px;
+   
 }
 
-.CTA button:hover{
+.button:hover{
     background-color: var(--green);
     cursor: pointer;
 }
