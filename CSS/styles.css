@@ -341,6 +341,10 @@ textarea {
     padding: 5px 10px;
 }
 
+.irrelevant{
+    visibility: hidden;
+}
+
 @media(min-width:900px) {
     .logo{
         width:397px;
