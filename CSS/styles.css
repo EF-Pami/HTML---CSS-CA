@@ -1,10 +1,10 @@
 /*Variable declarations
 ----------------------------*/
-:root{
+:root {
     --green: rgb(96, 234, 96);
     --tan: rgb(210, 180, 140);
     --red: rgb(255, 0, 0);
-    --black: rgb(0,0,0);
+    --black: rgb(0, 0, 0);
     --purple: #c5bbcd;
     --arch: #ccc;
     --darkorange: rgb(255, 140, 0);
@@ -22,63 +22,67 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
 }
 
-.logo{
+.logo {
     width: 190px;
     height: 140px;
 }
 
-#logo{
+#logo {
     width: 40%;
 }
 
-header{
+header {
     padding: 10px;
     position: fixed;
     width: 100%;
     background-color: var(--purple);
 }
 
-main{
+main {
     padding: 240px 10px 10px 10px;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-footer{
+
+footer {
     margin-top: auto;
 }
 
 
-body{
+body {
     background-color: var(--tan);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
 
 }
 
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold; 
-}
-h3{
+h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
 }
-h4{
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -92,11 +96,12 @@ h4{
     top: 180px;
 }
 
-.main-nav, #hamburger-input {
+.main-nav,
+#hamburger-input {
     display: none;
 }
 
-#hamburger-input:checked + .main-nav {
+#hamburger-input:checked+.main-nav {
     display: block;
 }
 
@@ -111,34 +116,35 @@ nav li {
     font-weight: bold;
 }
 
-nav a{
+nav a {
     color: var(--black);
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     color: var(--red);
 }
 
 
 /* Home page styling
 --------------------------*/
-.banner{
+.banner {
     display: flex;
     width: 100%;
     object-fit: cover;
-    
-}
-    
 
-.banner-img{
+}
+
+
+.banner-img {
     flex: 1 1;
     width: 100%;
-    
+
 }
 
 
 
-#captxt{
+#captxt {
     word-break: break-all;
     word-wrap: break-word;
     white-space: pre-line;
@@ -146,13 +152,23 @@ nav a:hover{
     font-size: 20px;
 }
 
-.hmimg{
+#rah{
+    margin-top: 20px;
+}
+
+.hb{
+    margin-top: 20px;
+}
+
+.hmimg {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    justify-items: space-between;
 }
-.hmimg-block{
+
+.hmimg-block {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -160,7 +176,8 @@ nav a:hover{
     margin-right: 20px;
     justify-content: space-between;
 }
-#captxt{
+
+#captxt {
     text-align: left;
     text-indent: 10px;
 }
@@ -169,13 +186,14 @@ nav a:hover{
 /* Movies page styling
 ---------------------------*/
 
-.movies{
+.movies {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;   
+    padding-top: 10px;
 }
-.movies-block{
+
+.movies-block {
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
@@ -183,7 +201,7 @@ nav a:hover{
     justify-content: space-between;
 }
 
-.movies img{
+.movies img {
     width: 150px;
     height: 300px;
 }
@@ -191,22 +209,31 @@ nav a:hover{
 
 /*Checkout page
 -------------------*/
-.container{
+.container {
     display: flex;
     flex-direction: column;
 }
-.container p{
+
+.container p {
     font-size: 20px;
     font-weight: bold;
 }
 
-.buy-form{
+.buy-form {
     margin-top: 15px;
 }
 
 .input[type=radio] {
     display: flex;
     flex-direction: column;
+}
+
+#wmm{
+    margin-top: 20px;
+}
+
+.am{
+    margin-top: 15px;
 }
 
 /*Signup page styling
@@ -221,7 +248,7 @@ nav a:hover{
 /*Contact page
 -----------------*/
 
-#chat{
+#chat {
     word-break: break-all;
     word-wrap: break-word;
     white-space: pre-line;
@@ -230,49 +257,49 @@ nav a:hover{
     margin-bottom: 15px;
 }
 
-.contact form{
+.contact form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     gap: 10px;
 }
-.input{
+
+.input {
     display: flex;
     flex-direction: column;
 }
 
 
-.contact-form{
+.contact-form {
     margin-top: 20px;
 }
 
 /*About page styling
 -----------------------*/
-.About-container img{
+.About-container img {
     width: 212px;
     height: 188px;
 }
-    
-    
+
+
 
 
 
 /*CTA-button 
 ---------------*/
 
-.button{
+.button {
     color: var(--black);
     background-color: var(--darkorange);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    
     text-decoration: none;
-    padding: 12px 15px;
+    padding: 10px 12px;
     border-radius: 20px;
-   
+
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--green);
     cursor: pointer;
 }
@@ -290,90 +317,90 @@ textarea {
     background-color: var(--grey);
     font-size: 16px;
     resize: none;
-    
-  }
 
-  input[type=text] {
+}
+
+input[type=text] {
     width: 250px;
     padding: 10px 10px;
     margin: 6px 0;
     border-radius: 10px;
     border: 2px solid var(--arch);
     box-sizing: border-box;
-  }
+}
 
-  input[type=number] {
+input[type=number] {
     width: 250px;
     padding: 10px 10px;
     margin: 6px 0;
     border-radius: 10px;
     border: 2px solid var(--arch);
     box-sizing: border-box;
-  }
+}
 
-  input[type=password]{
+input[type=password] {
     width: 250px;
     padding: 10px 10px;
     border-radius: 10px;
     border: 2px solid var(--arch);
     margin: 6px 0px;
     box-sizing: border-box;
-  }
+}
 
-  input[type=submit]{
+input[type=submit] {
     border: none;
     background-color: var(--darkorange);
     font-size: 15px;
     font-weight: bold;
     padding: 12px 15px;
     border-radius: 20px;
-  }
+}
 
 /*Footer styling
 --------------------*/
 
-  footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
+}
 
-  .fa{
+.fa {
     font-size: 30px;
     color: var(--black);
     padding: 5px 10px;
 }
 
-.irrelevant{
+.irrelevant {
     visibility: hidden;
 }
 
 @media(min-width:900px) {
-    .logo{
-        width:397px;
+    .logo {
+        width: 397px;
         height: 198px;
     }
 
-    header{
+    header {
         display: flex;
         background-color: var(--purple);
     }
 
-    #logo{
+    #logo {
         width: 20%;
     }
 
-    #sidebar-menu{
+    #sidebar-menu {
         position: relative;
         width: 80%;
         top: 0;
     }
 
-    ul li{
+    ul li {
         width: 100px;
     }
 
-    .main-nav{
+    .main-nav {
         display: flex;
         height: 100%;
         justify-content: flex-end;
@@ -384,56 +411,56 @@ textarea {
         list-style: none;
     }
 
-    #hamburger-menu{
+    #hamburger-menu {
         display: none;
     }
 
-    .hmimg img{
-       width: 300px;
-       height: 450px;
+    .hmimg img {
+        width: 300px;
+        height: 450px;
     }
 
-    .movies img{
+    .movies img {
         width: 250px;
         height: 450px;
     }
 
-    
-    
-    .product{
+
+
+    .product {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-columns: 1fr 1fr;
     }
 
-    .container{
+    .container {
         display: grid;
         grid-template-columns: auto auto;
     }
 
-    .About-container{
+    .About-container {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-columns: 1fr 1fr;
     }
-    .About-container img{
+
+    .About-container img {
         width: 350px;
         height: 250px;
     }
 
-    
-    
-    .buy-form{
+
+
+    .buy-form {
         float: right;
         width: 30%;
     }
-    .buy{
+
+    .buy {
         float: right;
         width: 30%;
         margin-bottom: 30px;
     }
 
-    
+
 }
-
-
