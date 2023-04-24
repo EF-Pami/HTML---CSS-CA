@@ -2,8 +2,16 @@
 const url ="https://api.noroff.dev/api/v1/square-eyes";
 const moviecontainer = document.querySelector (".moviecontainer");
 
+async function fetchdata(url) {
+    const payload = await fetch(url);
+    const data = await payload.json();
+    console.log({data});
+    return data;
+}
 
-async function movies() {
+fetchdata();
+
+/*async function movies() {
     try {
         const response = await fetch(url);
         const result = await response.json();
@@ -16,10 +24,9 @@ async function movies() {
 
 movies();
 
-moviecontainer.innerHTML = "<h1>${result[0].title}</h1>";
-    
-    
-    
+moviecontainer.innerHTML = "<h1>${result[0].title}</h1>";*/
+
+
     
 
 
@@ -39,7 +46,7 @@ async function fetchmovie(){
 }
 fetchmovie() .then(details=> console.log(details));*/
 
-/*function rendersingleData({id,title,description}){
+function rendersingleData({id,title,description}){
      
     const anchorTag = document.createElement('a');
     anchorTag.classList.add('card');
@@ -62,6 +69,6 @@ async function renderHTml(){
     });
 }
 
-renderHTml()*/
+renderHTml()
 
 
