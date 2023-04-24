@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.noroff.dev/api/v1';
+/*const BASE_URL = 'https://api.noroff.dev/api/v1';
 const ALL_PRODUCT_URL = '${Base_URL}/square-eyes';
 
 async function fetchdata() {
@@ -7,4 +7,4 @@ async function fetchdata() {
     return data;
 }
 
-fetchdata() .then(data=> console.log(data));
+fetchdata() .then(data=> console.log(data));*/
