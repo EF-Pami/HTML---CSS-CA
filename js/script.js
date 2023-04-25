@@ -1,17 +1,9 @@
 
-const url ="https://api.noroff.dev/api/v1/square-eyes";
+/*const url ="https://api.noroff.dev/api/v1/square-eyes";
 const moviecontainer = document.querySelector (".moviecontainer");
 
-async function fetchdata(url) {
-    const payload = await fetch(url);
-    const data = await payload.json();
-    console.log({data});
-    return data;
-}
 
-fetchdata();
-
-/*async function movies() {
+async function movies() {
     try {
         const response = await fetch(url);
         const result = await response.json();
@@ -20,18 +12,26 @@ fetchdata();
         console.error(error);
     }
 
+    
+
 }
 
 movies();
 
-moviecontainer.innerHTML = "<h1>${result[0].title}</h1>";*/
+for (let i = 0; i<result.length; i++)
+
+moviecontainer.innerHTML = `<h2>${result[i].title}</h2>
+    <p>${result[i].description}</p>
+    `;
 
 
     
 
 
-/*movies() .then(result=> console.log(result));*/
+movies() .then(result=> console.log(result));
 
+
+////////////////////////////////////////////////////
 /*const url = "https://api.noroff.dev/api/v1/square-eyes/b9e4edb1-e798-45e3-9c46-f7cd75b9326f";
 const product = document.querySelector (".product");
 
@@ -45,9 +45,22 @@ async function fetchmovie(){
     
 }
 fetchmovie() .then(details=> console.log(details));*/
+////////////////////////////////////////////////////////
+
+const url ="https://api.noroff.dev/api/v1/square-eyes";
+const moviecontainer = document.querySelector (".moviecontainer");
+
+async function fetchdata() {
+    const payload = await fetch(url);
+    const data = await payload.json();
+    console.log({data});
+    return data;
+}
+
+fetchdata();
 
 function rendersingleData({id,title,description}){
-     
+    console.log({id,title,description}) 
     const anchorTag = document.createElement('a');
     anchorTag.classList.add('card');
     anchorTag.href = `./view.html?id=${id}`;
@@ -60,7 +73,7 @@ function rendersingleData({id,title,description}){
 }
 
 async function renderHTml(){
-    const data = await fetch(url);
+    const data = await fetchdata(url);
     console.log({data});
     const moviecontainer = document.querySelector(".moviecontainer");
     data.forEach (element => {
