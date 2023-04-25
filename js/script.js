@@ -67,7 +67,7 @@ function rendersingleData({id,title,description}){
     const heading = document.createElement('h2');
     const body = document.createElement('p');
     heading.textContent = title;
-    body.textcontent = description;
+    body.textContent = description;
     anchorTag.append(heading,body);
     return anchorTag;
 }
