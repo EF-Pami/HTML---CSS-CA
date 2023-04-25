@@ -66,7 +66,7 @@ function rendersingleData({id,title,description}){
     anchorTag.href = `./view.html?id=${id}`;
     const heading = document.createElement('h2');
     const body = document.createElement('p');
-    heading.textcontent = title;
+    heading.textContent = title;
     body.textcontent = description;
     anchorTag.append(heading,body);
     return anchorTag;
@@ -75,7 +75,8 @@ function rendersingleData({id,title,description}){
 async function renderHTml(){
     const data = await fetchdata(url);
     console.log({data});
-    const moviecontainer = document.querySelector(".moviecontainer");
+    moviecontainer.innerHTML ="";
+    /*const moviecontainer = document.querySelector(".moviecontainer");*/
     data.forEach (element => {
         const card = rendersingleData(element);
         moviecontainer.append(card);
