@@ -11,9 +11,6 @@ async function movies() {
     } catch (error) {
         console.error(error);
     }
-
-    
-
 }
 
 movies();
@@ -24,28 +21,12 @@ moviecontainer.innerHTML = `<h2>${result[i].title}</h2>
     <p>${result[i].description}</p>
     `;
 
-
-    
-
-
-movies() .then(result=> console.log(result));
+movies() .then(result=> console.log(result));*/
 
 
-////////////////////////////////////////////////////
-/*const url = "https://api.noroff.dev/api/v1/square-eyes/b9e4edb1-e798-45e3-9c46-f7cd75b9326f";
-const product = document.querySelector (".product");
 
 
-async function fetchmovie(){
-    const response = await fetch(url);
-    const details = await response.json();
 
-    product.innerHTML =(details);
-    return details;
-    
-}
-fetchmovie() .then(details=> console.log(details));*/
-////////////////////////////////////////////////////////
 
 const url ="https://api.noroff.dev/api/v1/square-eyes";
 const moviecontainer = document.querySelector (".moviecontainer");
@@ -59,15 +40,16 @@ async function fetchdata() {
 
 fetchdata();
 
-function rendersingleData({id,title,description}){
-    console.log({id,title,description}) 
+function rendersingleData({id,title,image}){
+    console.log({id,title,image}) 
     const anchorTag = document.createElement('a');
     anchorTag.classList.add('card');
     anchorTag.href = `./view.html?id=${id}`;
     const heading = document.createElement('h2');
-    const body = document.createElement('p');
+    const body = document.createElement('img');
     heading.textContent = title;
-    body.textContent = description;
+    body.src = image;
+    
     anchorTag.append(heading,body);
     return anchorTag;
 }

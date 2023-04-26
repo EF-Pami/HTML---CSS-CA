@@ -206,6 +206,11 @@ nav a:hover {
     height: 300px;
 }
 
+.moviecontainer img {
+    width: 150px;
+    height: 300px;
+}
+
 
 /*Checkout page
 -------------------*/
@@ -421,6 +426,11 @@ footer {
     }
 
     .movies img {
+        width: 250px;
+        height: 450px;
+    }
+
+    .moviecontainer img {
         width: 250px;
         height: 450px;
     }
