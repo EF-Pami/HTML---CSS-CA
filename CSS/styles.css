@@ -210,6 +210,14 @@ nav a:hover {
     width: 150px;
     height: 300px;
 }
+.moviecontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+element.style {
+    display: grid;
+    grid-template-columns: auto auto;
+}
 
 
 /*Checkout page
@@ -247,7 +255,10 @@ nav a:hover {
 
 /*view pages
 ---------------*/
-
+#details img{
+    width: 300px;
+    height: 500px;
+}
 
 
 /*Contact page
@@ -433,6 +444,10 @@ footer {
     .moviecontainer img {
         width: 250px;
         height: 450px;
+    }
+    element.style {
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 
 
