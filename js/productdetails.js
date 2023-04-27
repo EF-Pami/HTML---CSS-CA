@@ -40,7 +40,7 @@ async function fetchdata() {
 
 async function renderHTml() {
     const data = await fetchdata();
-    const mainElement = document.querySelector('main');
+    const mainElement = document.querySelector(".product");
     mainElement.innerHTML = `
     <div id="details">
         <h1> ${data.title}</h1>

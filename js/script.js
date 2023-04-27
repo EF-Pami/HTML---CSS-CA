@@ -24,15 +24,16 @@ moviecontainer.innerHTML = `<h2>${result[i].title}</h2>
 movies() .then(result=> console.log(result));*/
 
 
+/*const BASE_URL = 'https://api.noroff.dev/api/v1'
+const ALL_PRODUCT = '/square-eyes'*/
 
 
 
-
-const url ="https://api.noroff.dev/api/v1/square-eyes";
-const moviecontainer = document.querySelector (".moviecontainer");
+/*const url ="https://api.noroff.dev/api/v1/square-eyes";*/
+/*const moviecontainer = document.querySelector (".moviecontainer");
 
 async function fetchdata() {
-    const payload = await fetch(url);
+    const payload = await fetch(BASE_URL + ALL_PRODUCT);
     const data = await payload.json();
     console.log({data});
     return data;
@@ -55,16 +56,44 @@ function rendersingleData({id,title,image}){
 }
 
 async function renderHTml(){
-    const data = await fetchdata(url);
+    const data = await fetchdata(BASE_URL + ALL_PRODUCT);
     console.log({data});
     moviecontainer.innerHTML ="";
     /*const moviecontainer = document.querySelector(".moviecontainer");*/
-    data.forEach (element => {
+    /*data.forEach (element => {
         const card = rendersingleData(element);
         moviecontainer.append(card);
     });
 }
 
+renderHTml()*/
+
+
+
+
+const movies = document.querySelector(".movies")
+const movies_block = document.querySelector(".movies-block")
+const BASE_URL = 'https://api.noroff.dev/api/v1'
+const ALL_PRODUCT = '/square-eyes'
+
+async function fetchdata() {
+    const response = await fetch(BASE_URL + ALL_PRODUCT);
+    const data = await response.json();
+    return data;
+}
+
+
+async function renderHTml() {
+    const products = await fetchdata();
+    console.log({products})
+    console.log({html: movies_block.innerHTML})
+    movies_block.innerHTML = '';
+    products.forEach(function (element, index) {
+        movies_block.innerHTML += `
+        <img src ="${element.image}"alt ="">
+        
+        `
+    })
+}
+
 renderHTml()
-
-
