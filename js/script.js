@@ -91,7 +91,6 @@ async function renderHTml() {
     products.forEach(function (element, index) {
         movies_block.innerHTML += `
         <img src ="${element.image}"alt ="">
-        
         `
     })
 }

@@ -22,21 +22,22 @@ async function fetchmovie(){
     
 }
 fetchmovie() .then(details=> console.log(details));*/
-
 const querystring = location.search;
 console.log({querystring});
 const params = new URLSearchParams(querystring)
 const id = params.get('id');
 
 const BASE_URL = 'https://api.noroff.dev/api/v1';
-const product_detail = `${BASE_URL}/square-eyes/${id}`;
+const Product_detail =`${BASE_URL}/square-eyes?id=${id}`;
+
 
 async function fetchdata() {
-    const payload = await fetch(product_detail);
-    const data = await payload.json();
-    console.log({data});
+    const response = await fetch(Product_detail);
+    const data = await response.json();
+    console.log(data)
     return data;
 }
+fetchdata();
 
 async function renderHTml() {
     const data = await fetchdata();
@@ -49,7 +50,7 @@ async function renderHTml() {
         <p> ${data.released}</p>
         <p> ${data.discountedPrice}</p>
         <img src ="${data.image}" alt="">
-        <a href ="./checkout.html"</a>
+        
     </div>    
     `
 }

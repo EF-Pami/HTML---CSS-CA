@@ -16,19 +16,18 @@ async function renderHTml() {
     console.log({productshm})
     console.log({html: hmimg_block.innerHTML})
     hmimg_block.innerHTML = '';
-    productshm.forEach(function (element, index) {
+    /*productshm.forEach(function (element, index) {
         hmimg_block.innerHTML += `
         <img src ="${element.image}"alt ="">
         `
-    })
+    })*/
 
     for(let count = 0; count <= productshm.length; count++) {
+        console.log({count})
         hmimg_block.innerHTML +=`
-        <img src = ${productshm[0].image} alt="">
+        <img src = ${productshm[count].image} alt="">
         `
-    if (count === 3) {
-            break;
-          }   
+    if (count == 2) break;  
     }
 } 
 
