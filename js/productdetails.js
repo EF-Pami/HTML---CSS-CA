@@ -22,13 +22,14 @@ async function fetchmovie(){
     
 }
 fetchmovie() .then(details=> console.log(details));*/
-const querystring = location.search;
+const mainElement = document.querySelector(".product")
+const querystring = document.location.search;
 console.log({querystring});
-const params = new URLSearchParams(querystring)
+const params = new URLSearchParams(querystring);
 const id = params.get('id');
 
 const BASE_URL = 'https://api.noroff.dev/api/v1';
-const Product_detail =`${BASE_URL}/square-eyes?id=${id}`;
+const Product_detail = BASE_URL + "/square-eyes/" + id;
 
 
 async function fetchdata() {

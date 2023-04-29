@@ -90,7 +90,8 @@ async function renderHTml() {
     movies_block.innerHTML = '';
     products.forEach(function (element, index) {
         movies_block.innerHTML += `
-        <img src ="${element.image}"alt ="">
+        <a href="view.html?id=${element.id}"><img src ="${element.image}"alt =""></a>
+        
         `
     })
 }
