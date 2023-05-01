@@ -482,10 +482,7 @@ footer {
         width: 250px;
         height: 450px;
     }
-    element.style {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
+   
 
 
 

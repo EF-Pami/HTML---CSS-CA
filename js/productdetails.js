@@ -51,9 +51,10 @@ async function renderHTml() {
         <p> ${data.released}</p>
         <p> ${data.discountedPrice}</p>
         <img src ="${data.image}" alt="">
-        
+        <a href="Checkout.html" class="button">Add to cart</a>
     </div>    
     `
 }
 
 renderHTml()
+
