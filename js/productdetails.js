@@ -23,6 +23,7 @@ async function fetchmovie(){
 }
 fetchmovie() .then(details=> console.log(details));*/
 const mainElement = document.querySelector(".product")
+const hb = document.querySelector(".hb");
 const querystring = document.location.search;
 console.log({querystring});
 const params = new URLSearchParams(querystring);
@@ -54,6 +55,8 @@ async function renderHTml() {
         <a href="Checkout.html" class="button">Add to cart</a>
     </div>    
     `
+    document.title = 'movie_details';
+
 }
 
 renderHTml()
