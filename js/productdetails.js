@@ -1,27 +1,4 @@
-/*const BASE_URL = 'https://api.noroff.dev/api/v1';
-const ALL_PRODUCT_URL = '${Base_URL}/square-eyes';
 
-async function fetchdata() {
-    const response = await fetch(ALL_PRODUCT_URL);
-    const data = await response.json();
-    return data;
-}
-
-fetchdata() .then(data=> console.log(data));*/
-
-/*const url = "https://api.noroff.dev/api/v1/square-eyes/b9e4edb1-e798-45e3-9c46-f7cd75b9326f";
-const product = document.querySelector (".product");
-
-
-async function fetchmovie(){
-    const response = await fetch(url);
-    const details = await response.json();
-
-    product.innerHTML =(details);
-    return details;
-    
-}
-fetchmovie() .then(details=> console.log(details));*/
 const mainElement = document.querySelector(".product")
 const hb = document.querySelector(".hb");
 const querystring = document.location.search;
@@ -45,14 +22,14 @@ async function renderHTml() {
     const data = await fetchdata();
     const mainElement = document.querySelector(".product");
     mainElement.innerHTML = `
-    <div id="details">
+    <div id="details">    
         <h1> ${data.title}</h1>
         <p> ${data.description}</p>
         <p> ${data.genre}</p>
         <p> ${data.released}</p>
         <p> ${data.discountedPrice}</p>
         <img src ="${data.image}" alt="">
-        <a href="Checkout.html" class="button">Add to cart</a>
+        <a href="Checkout.html" class="button">Add to cart</a>    
     </div>    
     `
     document.title = 'movie_details';

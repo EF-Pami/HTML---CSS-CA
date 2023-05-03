@@ -16,11 +16,7 @@ async function renderHTml() {
     console.log({productshm})
     console.log({html: hmimg_block.innerHTML})
     hmimg_block.innerHTML = '';
-    /*productshm.forEach(function (element, index) {
-        hmimg_block.innerHTML += `
-        <img src ="${element.image}"alt ="">
-        `
-    })*/
+    
 
     for(let count = 0; count <= productshm.length; count++) {
         console.log({count})

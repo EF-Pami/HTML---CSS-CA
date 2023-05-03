@@ -210,14 +210,11 @@ nav a:hover {
     width: 150px;
     height: 300px;
 }
-.moviecontainer {
+.movies-block {
     display: grid;
     grid-template-columns: auto auto;
 }
-element.style {
-    display: grid;
-    grid-template-columns: auto auto;
-}
+
 
 
 /*Checkout page
@@ -384,7 +381,7 @@ input[type=submit] {
     justify-content: center;
     align-items: center;
     background-color: var(--arch);
-    transition: opacity 0.85s, visibility 0.85s;
+    transition: opacity 0.95s, visibility 0.95s;
 }
 .loader-hidden{
     opacity: 0;
@@ -397,7 +394,7 @@ input[type=submit] {
     border: 15px solid var(--purple);
     border-top-color: var(--red);
     border-radius: 50%;
-    animation: loading 0.85s ease infinite;
+    animation: loading 0.95s ease infinite;
 }
 
 @keyframes loading {
@@ -482,6 +479,11 @@ footer {
         width: 250px;
         height: 450px;
     }
+    .movies-block {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    
    
 
 
