@@ -1,4 +1,4 @@
-
+//import BASE_URL from "./index.js";
 
 const movies = document.querySelector(".movies")
 const movies_block = document.querySelector(".movies-block")
@@ -25,7 +25,7 @@ async function renderHTml() {
     movies_block.innerHTML = '';
     products.forEach(function (element, index) {
         movies_block.innerHTML += `
-        <a href="view.html?id=${element.id}"><img src ="${element.image}"alt =""></a>
+        <a href="productdetails.html?id=${element.id}"><img src ="${element.image}"alt =""></a>
         
         `
     })

@@ -1,6 +1,6 @@
 
-const hmimg = document.querySelector(".hmimg")
-const hmimg_block = document.querySelector(".hmimg-block")
+const hmimg = document.querySelector(".homeimg")
+const hmimg_block = document.querySelector(".homeimg-block")
 const BASE_URL = 'https://api.noroff.dev/api/v1'
 const ALL_PRODUCT = '/square-eyes'
 
@@ -12,19 +12,21 @@ async function fetchdata() {
 
 
 async function renderHTml() {
-    const productshm = await fetchdata();
-    console.log({productshm})
+    const productshome = await fetchdata();
+    console.log({productshome})
     console.log({html: hmimg_block.innerHTML})
     hmimg_block.innerHTML = '';
     
 
-    for(let count = 0; count <= productshm.length; count++) {
+    for(let count = 0; count <= productshome.length; count++) {
         console.log({count})
         hmimg_block.innerHTML +=`
-        <img src = ${productshm[count].image} alt="">
+        <img src = ${productshome[count].image} alt="">
         `
     if (count == 2) break;  
     }
 } 
 
 renderHTml()
+
+//export default BASE_URL;
