@@ -20,3 +20,9 @@ In regards to the styling of our website, I used CSS codes to style my contents 
 
 #Conclusion#
 The task of this work had to do with the building of a website using mainly HMTL and CSS, a movie streaming website was built with these two programing languages with the code editor vscode. The html was sued for coding our site contents while CSS was used to style the contents and to make the web site responsive among different screen sizes and to be accessible within different web browsers. A movie website with a netlify link and github repository all consist the end products that I was able to achieve at the end of this work.
+
+/Comments on the javascript pages/
+
+In this section, I did the API calls for the index.html page, the movie.html and product.html page so as to fetch for the products directly from the API. The product displayed on the index page are limited to just three products considered the home products. In the movie page, the result of the API call displays all the products we need for the site with their various id. The productdetails page shows the user the different information about a particular product which has been clicked from the movie page.
+
+Javascript sythax such queryselector, querystring, for loop(with the break option), for each, innerHTml were all used to display contents between the html pages and the javascript pages correctly for the user.
