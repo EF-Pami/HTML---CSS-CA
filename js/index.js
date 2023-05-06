@@ -13,13 +13,13 @@ async function fetchdata() {
 
 async function renderHTml() {
     const productshome = await fetchdata();
-    console.log({productshome})
-    console.log({html: hmimg_block.innerHTML})
+    //console.log({productshome})
+    //console.log({html: hmimg_block.innerHTML})
     hmimg_block.innerHTML = '';
     
 
     for(let count = 0; count <= productshome.length; count++) {
-        console.log({count})
+        //console.log({count})
         hmimg_block.innerHTML +=`
         <img src = ${productshome[count].image} alt="">
         `

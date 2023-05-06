@@ -2,7 +2,7 @@
 const mainElement = document.querySelector(".product")
 const hb = document.querySelector(".homebtn");
 const querystring = document.location.search;
-console.log({querystring});
+//console.log({querystring});
 const params = new URLSearchParams(querystring);
 const id = params.get('id');
 
@@ -13,7 +13,7 @@ const Product_detail = BASE_URL + "/square-eyes/" + id;
 async function fetchdata() {
     const response = await fetch(Product_detail);
     const data = await response.json();
-    console.log(data)
+    //console.log(data)
     return data;
 }
 fetchdata();

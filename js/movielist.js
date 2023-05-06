@@ -12,7 +12,7 @@ async function fetchdata() {
     return data;
 
     } catch (error) {
-        console.error(error);
+        //console.error(error);
     }
     
 }
@@ -20,8 +20,8 @@ async function fetchdata() {
 
 async function renderHTml() {
     const products = await fetchdata();
-    console.log({products})
-    console.log({html: movies_block.innerHTML})
+    //console.log({products})
+    //console.log({html: movies_block.innerHTML})
     movies_block.innerHTML = '';
     products.forEach(function (element, index) {
         movies_block.innerHTML += `
