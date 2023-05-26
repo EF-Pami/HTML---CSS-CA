@@ -28,8 +28,10 @@ async function renderHTml() {
         <p> ${data.genre}</p>
         <p> ${data.released}</p>
         <p> ${data.discountedPrice}</p>
+        <a href="Checkout.html?id=${data.id}" class="button">Add to cart</a>   
+    </div>
+    <div>
         <img src ="${data.image}" alt="">
-        <a href="Checkout.html" class="button">Add to cart</a>    
     </div>    
     `
     document.title = 'product_details';

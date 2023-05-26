@@ -497,13 +497,18 @@ footer {
         grid-template-columns: auto auto;
         grid-template-columns: 1fr 1fr;
     }
+    #details {
+        word-wrap: break-word;
+        white-space: pre-line;
+    }
 
     .container {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 250px 750px;
+        
     }
 
-    .About-container {
+    .About-container, .contact-container {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-columns: 1fr 1fr;
