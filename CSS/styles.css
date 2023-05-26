@@ -256,9 +256,8 @@ nav a:hover {
 
 /*productdetails pages
 ---------------*/
-#details img{
-    width: 300px;
-    height: 500px;
+.product img{
+    margin-top: 20px;
 }
 #details {
     word-wrap: break-word;
