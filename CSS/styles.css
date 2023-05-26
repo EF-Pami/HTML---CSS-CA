@@ -254,7 +254,7 @@ nav a:hover {
 ------------------------*/
 
 
-/*view pages
+/*productdetails pages
 ---------------*/
 #details img{
     width: 300px;
@@ -263,6 +263,10 @@ nav a:hover {
 #details {
     word-wrap: break-word;
     white-space: pre-line;
+}
+.product img, .container img{
+    width: 300px;
+    height: 500px;
 }
 
 
@@ -508,8 +512,12 @@ footer {
 
     .container {
         display: grid;
-        grid-template-columns: 250px 750px;
-        
+        grid-template-columns: 250px 750px;  
+    }
+
+    .product img, .container img{
+        width: 500px;
+        height: 700px;
     }
 
     .About-container, .contact-container {
