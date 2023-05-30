@@ -9,6 +9,9 @@
     --arch: #ccc;
     --darkorange: rgb(255, 140, 0);
     --grey: #f8f8f8;
+    --white: #fff;
+    --thickred: #f44336;
+    --thickgreen: #04AA6D;
 }
 
 
@@ -21,6 +24,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 html,
 body {
@@ -210,6 +215,10 @@ nav a:hover {
     height: 300px;
 }
 
+.movies img:hover{
+    opacity: 0.7;
+}
+
 .moviecontainer img {
     width: 150px;
     height: 300px;
@@ -327,6 +336,25 @@ nav a:hover {
     background-color: var(--green);
     cursor: pointer;
 }
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: var(--thickred);
+    color: var(--white);
+}
+.signupbtn {
+    padding: 14px 20px;
+    background-color: var(--thickgreen);
+    color: var(--white);
+}
+
+
+
+.regisbtn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
 
 /*Forms Styling
 -------------------*/
