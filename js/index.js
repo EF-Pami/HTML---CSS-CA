@@ -22,6 +22,7 @@ async function renderHTml() {
         //console.log({count})
         hmimg_block.innerHTML +=`
         <img src = ${productshome[count].image} alt="">
+        
         `
     if (count == 2) break;  
     }
