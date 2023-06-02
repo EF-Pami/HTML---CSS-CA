@@ -372,12 +372,12 @@ nav a:hover {
 .cancelbtn {
     padding: 14px 20px;
     background-color: var(--thickred);
-    color: var(--white);
+    color: var(--black);
 }
 .signupbtn {
     padding: 14px 20px;
     background-color: var(--thickgreen);
-    color: var(--white);
+    color: var(--black);
 }
 
 
