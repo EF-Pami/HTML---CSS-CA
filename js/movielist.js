@@ -25,7 +25,7 @@ async function renderHTml() {
     movies_block.innerHTML = '';
     products.forEach(function (element, index) {
         movies_block.innerHTML += `
-        <a href="productdetails.html?id=${element.id}"><img src ="${element.image}"alt =""></a>
+        <a href="productdetails.html?id=${element.id}"><img src ="${element.image}"alt ="movie poster"></a>
         
         `
     })
