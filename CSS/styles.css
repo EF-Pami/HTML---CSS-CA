@@ -120,9 +120,7 @@ body{
     background-color: var(--purple);
     padding: 10px;
 }
-.main-nav.active{
-    border-bottom-color: var(--black);
-}
+
 
 nav li {
     font-family: Arial, Helvetica, sans-serif;
