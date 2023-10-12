@@ -12,6 +12,7 @@
     --white: #fff;
     --thickred: #f44336;
     --thickgreen: #04AA6D;
+    --lightdark: #494747;
 }
 
 
@@ -65,8 +66,8 @@ footer {
 
 
 body {
-    background-image: url(../images/backgroundpic.jpg);
-    background-color: var(--black);
+    /*background-image: url(../images/backgroundpic.jpg);*/
+    background-color: var(--lightdark);
     font-family: Arial, Helvetica, sans-serif;
 }
 
