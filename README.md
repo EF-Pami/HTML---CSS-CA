@@ -7,12 +7,23 @@ This project was my first HTML and CSS assignment which has aim of building of a
 
 The project however presences a responsive good looking site for user with different pages as detailed:
 
-- Home: this page presence the welcoming landing page for the site with easy navigation routes to the other pages of the site
-- Movie page: this page presence the different categories of movies available for the site
-- About: the about page gives a brief description about the site for user's knowledge
-- Contact: the contact page gives an overview of means of contacting the regulators of the site
-- Sign up: this section provides a form through which user can signup to become members of the site for easy accessibility and movie purchase
-- Shopping Card: the card simply lead users to either add interested movies they wish to purchase to their cards as well as it helps as a reminder to show what a user have in their cards
+### Home page
+The home page gives a brief overview of the site, the page contains a banner image which serves as a hero image for attractiveness for the users of the site. The page also contains few posters of movies and a call to action button which when clicked by users will take them to the movie page where they get to see many other movies of the site.
+
+## Movie page
+This page presences the different movie categories available for the site; here users can click on any movie of their choice they wished to watched or purchased. When clicked on a specific movie, it gives access for more details about the movie and call to actions button permitting the users to either watch the movie instanly or buy to watched later.
+
+## About page
+This page gives a simple detail information about the site
+
+## Contact page
+The contact page provide information on the different means of getting in touch with the site administrators; this page also contains a contact form through which users can send in direct messages.
+
+## Sign up page
+This section provides a form through which user can signup to become members of the site for easy accessibility and movie purchase
+
+## Shopping card
+The card simply lead users to either add interested movies they wish to purchase to their cards as well as it helps as a reminder to show what a user have in their cards
 
 ## Built With
 - Design using Figma
